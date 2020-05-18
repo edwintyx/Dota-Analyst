@@ -1,0 +1,40 @@
+{
+  "manifest": {
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "dota-analyst-lambda-function",
+          "sourceDir": "lambda\\us-east-1_dota-analyst-lambda-function"
+        },
+        "interfaces": []
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "usesPersonalInfo": false,
+      "isChildDirected": false,
+      "isExportCompliant": true,
+      "containsAds": false
+    },
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "name": "Dota Analyst",
+          "smallIconUri": "https://s3.amazonaws.com/CAPS-SSE/echo_developer/d07f/8dd7d559664f49949a8f895c5a462534/APP_ICON?versionId=zmJKuXRP0FvCYuzzsnMDgAuTqntge7xS&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190911T050913Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Credential=AKIAJFEYRBGIHK2BBYKA%2F20190911%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=aa32386977c9aa11e8b3652911cf2f7013dc718c562d4a22ee7f94db3a764ffe",
+          "largeIconUri": "https://s3.amazonaws.com/CAPS-SSE/echo_developer/5ef4/2298af5928c3407abc80ba9dc7085a54/APP_ICON_LARGE?versionId=cirwG.OMp6eKy6Wj7RfNifnRZo6_kG6Y&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190911T050913Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Credential=AKIAJFEYRBGIHK2BBYKA%2F20190911%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=36c83c1cba4a4dbe3086841ab08866ab6cee3e2b88f8ec43329fcf5cd45e0642",
+          "summary": "You can now ask Alexa who will win the Internationals 2019 in Dota2 as well as when are the upcoming matches?",
+          "description": "Dota Analyst is an Esports assistant that aims to provide useful information as well as predictions to users that are particularly interested in the competitive Esports gaming scene called Dota2. (e.g. What are the upcoming matches/tournaments, Overview about a professional gaming team, who will win?).\nIt is important to know that predictions made by Dota Analyst are solely based on mathematics and statistics; of which holds no bias towards or against any one team, with no guarantee that the prediction will be correct.",
+          "examplePhrases": [
+            "Alexa, open Dota Analyst"
+          ],
+          "keywords": []
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "I hope there are no problems with the skill but you can always contact me at eytan1@sheffield.ac.uk if there's any unforseen problems. Thanks",
+      "category": "GAMES",
+      "distributionCountries": []
+    }
+  }
+}

@@ -1,0 +1,969 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "dota analyst",
+      "intents": [
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "help",
+            "i need help",
+            "please help me",
+            "i don't know how to use this application"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "GetDotaTeamOverview",
+          "slots": [
+            {
+              "name": "team",
+              "type": "dotaTeamNames",
+              "samples": [
+                "Give me {team} overview",
+                "{team} overview",
+                "Get {team} overview",
+                "Get me {team} overview",
+                "{team}"
+              ]
+            }
+          ],
+          "samples": [
+            "Get me team overview",
+            "Give me team overview",
+            "Tell me about {team}",
+            "Can you tell me more about {team}",
+            "Give me an overview of {team}",
+            "Get me {team} overview",
+            "Get {team} overview",
+            "Can you tell me {team}  overview",
+            "What is the overview of {team}",
+            "Give me {team} overview",
+            "{team} overview"
+          ]
+        },
+        {
+          "name": "GetDotaTeamAchievements",
+          "slots": [
+            {
+              "name": "team",
+              "type": "dotaTeamNames",
+              "samples": [
+                "{team}",
+                "Get me {team} achievements",
+                "Get {team} achievements",
+                "{team} achievements",
+                "Give me {team} achievements"
+              ]
+            }
+          ],
+          "samples": [
+            "Get me team achievements",
+            "Give me team achievements",
+            "Tell me about {team} achievements",
+            "Give me {team} achievements",
+            "Can you tell me more about {team} achievements",
+            "Get me {team} achievements",
+            "Get {team} achievements",
+            "Can you tell me {team}  achievements",
+            "What are {team} achievements",
+            "for {team} achievements",
+            "{team} achievements"
+          ]
+        },
+        {
+          "name": "GetDotaTeamRoster",
+          "slots": [
+            {
+              "name": "team",
+              "type": "dotaTeamNames",
+              "samples": [
+                "{team}",
+                "Get me {team} roster",
+                "Get {team} roster",
+                "{team} roster",
+                "Give me {team} roster"
+              ]
+            }
+          ],
+          "samples": [
+            "Get me team roster",
+            "Give me team roster",
+            "Give me {team} roster",
+            "Tell me about {team} roster",
+            "Can you tell me more about {team} roster",
+            "Get me {team} roster",
+            "Get {team} roster",
+            "Can you tell me {team} roster",
+            "What are {team} roster",
+            "for {team} roster",
+            "{team} roster"
+          ]
+        },
+        {
+          "name": "GetOngoingMatches",
+          "slots": [],
+          "samples": [
+            "What are the live matches now",
+            "Get me live matches",
+            "Update me ongoing matches",
+            "Update me live matches",
+            "What are the ongoing matches",
+            "Give me live matches",
+            "Give me ongoing matches"
+          ]
+        },
+        {
+          "name": "GetUpcomingMatches",
+          "slots": [],
+          "samples": [
+            "When are the next match",
+            "When is the next match",
+            "Next matches",
+            "Update me upcoming matches",
+            "Tell me upcoming matches",
+            "What are the upcoming matches",
+            "Get me upcoming matches",
+            "Give me upcoming matches",
+            "What are the next matches"
+          ]
+        },
+        {
+          "name": "GetMatchStatusSummary",
+          "slots": [
+            {
+              "name": "number",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "{number} matches please",
+                "I would like {number} match",
+                "I would like {number} matches",
+                "{number}"
+              ]
+            }
+          ],
+          "samples": [
+            "Give me {number} match status summary",
+            "Give me match status summary",
+            "Give me {number} match status please",
+            "for {number} match status",
+            "Give me {number} match status",
+            "Give me match status",
+            "Match status summary"
+          ]
+        },
+        {
+          "name": "GetDotaTeamMatchResults",
+          "slots": [
+            {
+              "name": "teamID",
+              "type": "dotaTeamId",
+              "samples": [
+                "Give me {teamID} match results",
+                "{teamID} ",
+                "Get me {teamID} match results",
+                "{teamID} match results"
+              ]
+            }
+          ],
+          "samples": [
+            "Give me team match results",
+            "{teamID} results",
+            "Give me {teamID} match results",
+            "Get me {teamID} match results",
+            "{teamID} match results",
+            "Give me match results for {teamID}"
+          ]
+        },
+        {
+          "name": "GetDotaTeamPredictions",
+          "slots": [
+            {
+              "name": "teamOneID",
+              "type": "dotaTeamId",
+              "samples": [
+                "{teamOneID}"
+              ]
+            },
+            {
+              "name": "teamTwoID",
+              "type": "dotaTeamId",
+              "samples": [
+                "{teamTwoID}"
+              ]
+            }
+          ],
+          "samples": [
+            "Will {teamOneID} win their next match",
+            "Give me match predictions",
+            "Give me predictions of {teamOneID} versus {teamTwoID}",
+            "Will {teamOneID} win their next match against {teamTwoID}"
+          ]
+        },
+        {
+          "name": "AMAZON.YesIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NoIntent",
+          "samples": []
+        },
+        {
+          "name": "GetTIPredictions",
+          "slots": [],
+          "samples": [
+            "Which team do you think will win TI",
+            "Which team do you think will win the internationals",
+            "Who do you think will win the TI",
+            "Which team do you think will win the TI",
+            "Who will win the internationals tournament",
+            "Who do you think will win the internationals",
+            "Who will win the internationals"
+          ]
+        },
+        {
+          "name": "AMAZON.RepeatIntent",
+          "samples": []
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "id": "Infamous",
+              "name": {
+                "value": "Infamous"
+              }
+            },
+            {
+              "id": "Forward_Gaming",
+              "name": {
+                "value": "Forward Gaming"
+              }
+            },
+            {
+              "id": "Navi",
+              "name": {
+                "value": "Navi",
+                "synonyms": [
+                  "Natus Vincere"
+                ]
+              }
+            },
+            {
+              "id": "Chaos_Esports_Club",
+              "name": {
+                "value": "Chaos Esports Club",
+                "synonyms": [
+                  "CHAOS"
+                ]
+              }
+            },
+            {
+              "id": "Ninjas_in_Pyjamas",
+              "name": {
+                "value": "Ninjas in Pyjamas"
+              }
+            },
+            {
+              "id": "Keen_Gaming",
+              "name": {
+                "value": "Keen Gaming"
+              }
+            },
+            {
+              "id": "Evil_Geniuses",
+              "name": {
+                "value": "Evil Geniuses",
+                "synonyms": [
+                  "EG"
+                ]
+              }
+            },
+            {
+              "id": "OG",
+              "name": {
+                "value": "OG"
+              }
+            },
+            {
+              "id": "Royal_Never_Give_Up",
+              "name": {
+                "value": "Royal Never Give Up",
+                "synonyms": [
+                  "RNG"
+                ]
+              }
+            },
+            {
+              "id": "TNC_Predator",
+              "name": {
+                "value": "TNC Predator"
+              }
+            },
+            {
+              "id": "PSG_LGD",
+              "name": {
+                "value": "PSG LGD"
+              }
+            },
+            {
+              "id": "Virtus_Pro",
+              "name": {
+                "value": "Virtus Pro",
+                "synonyms": [
+                  "VP"
+                ]
+              }
+            },
+            {
+              "id": "Alliance",
+              "name": {
+                "value": "Alliance"
+              }
+            },
+            {
+              "id": "Mineski",
+              "name": {
+                "value": "Mineski"
+              }
+            },
+            {
+              "id": "Fnatic",
+              "name": {
+                "value": "Fnatic"
+              }
+            },
+            {
+              "id": "Team_Liquid",
+              "name": {
+                "value": "Team Liquid"
+              }
+            },
+            {
+              "id": "Vici_Gaming",
+              "name": {
+                "value": "Vici Gaming",
+                "synonyms": [
+                  "VG"
+                ]
+              }
+            },
+            {
+              "id": "Team_Secret",
+              "name": {
+                "value": "Team Secret"
+              }
+            }
+          ],
+          "name": "dotaTeamNames"
+        },
+        {
+          "values": [
+            {
+              "id": "2672298",
+              "name": {
+                "value": "Infamous",
+                "synonyms": [
+                  "Infamous Gaming"
+                ]
+              }
+            },
+            {
+              "id": "6214538",
+              "name": {
+                "value": "Forward Gaming"
+              }
+            },
+            {
+              "id": "36",
+              "name": {
+                "value": "Navi",
+                "synonyms": [
+                  "Natus Vincere"
+                ]
+              }
+            },
+            {
+              "id": "6666989",
+              "name": {
+                "value": "Chaos Esports Club",
+                "synonyms": [
+                  "CHAOS"
+                ]
+              }
+            },
+            {
+              "id": "6214973",
+              "name": {
+                "value": "Ninjas in Pyjamas",
+                "synonyms": [
+                  "NiP"
+                ]
+              }
+            },
+            {
+              "id": "2626685",
+              "name": {
+                "value": "Keen Gaming"
+              }
+            },
+            {
+              "id": "39",
+              "name": {
+                "value": "Evil Geniuses",
+                "synonyms": [
+                  "EG"
+                ]
+              }
+            },
+            {
+              "id": "2586976",
+              "name": {
+                "value": "OG"
+              }
+            },
+            {
+              "id": "6209804",
+              "name": {
+                "value": "Royal Never Give Up",
+                "synonyms": [
+                  "RNG"
+                ]
+              }
+            },
+            {
+              "id": "2108395",
+              "name": {
+                "value": "TNC Predator",
+                "synonyms": [
+                  "TNC"
+                ]
+              }
+            },
+            {
+              "id": "15",
+              "name": {
+                "value": "PSG LGD",
+                "synonyms": [
+                  "PSG.LGD"
+                ]
+              }
+            },
+            {
+              "id": "1883502",
+              "name": {
+                "value": "Virtus Pro",
+                "synonyms": [
+                  "VP"
+                ]
+              }
+            },
+            {
+              "id": "111474",
+              "name": {
+                "value": "Alliance"
+              }
+            },
+            {
+              "id": "543897",
+              "name": {
+                "value": "Mineski"
+              }
+            },
+            {
+              "id": "350190",
+              "name": {
+                "value": "Fnatic"
+              }
+            },
+            {
+              "id": "2163",
+              "name": {
+                "value": "Team Liquid",
+                "synonyms": [
+                  "Liquid"
+                ]
+              }
+            },
+            {
+              "id": "726228",
+              "name": {
+                "value": "Vici Gaming",
+                "synonyms": [
+                  "VG"
+                ]
+              }
+            },
+            {
+              "id": "1838315",
+              "name": {
+                "value": "Team Secret"
+              }
+            }
+          ],
+          "name": "dotaTeamId"
+        }
+      ]
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "GetDotaTeamOverview",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "team",
+              "type": "dotaTeamNames",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1103042522101.316972066631"
+              },
+              "validations": [
+                {
+                  "type": "hasEntityResolutionMatch",
+                  "prompt": "Slot.Validation.875936012202.416776874351.1109607378218"
+                }
+              ]
+            }
+          ],
+          "delegationStrategy": "ALWAYS"
+        },
+        {
+          "name": "GetDotaTeamAchievements",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "team",
+              "type": "dotaTeamNames",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1458719464770.1011767418460"
+              },
+              "validations": [
+                {
+                  "type": "hasEntityResolutionMatch",
+                  "prompt": "Slot.Validation.1458719464770.1011767418460.1036410630925"
+                }
+              ]
+            }
+          ],
+          "delegationStrategy": "ALWAYS"
+        },
+        {
+          "name": "GetDotaTeamRoster",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "team",
+              "type": "dotaTeamNames",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.341070753446.455101424386"
+              },
+              "validations": [
+                {
+                  "type": "hasEntityResolutionMatch",
+                  "prompt": "Slot.Validation.341070753446.455101424386.1214274740019"
+                }
+              ]
+            }
+          ],
+          "delegationStrategy": "ALWAYS"
+        },
+        {
+          "name": "GetMatchStatusSummary",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "number",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1184505318482.1091169615511"
+              }
+            }
+          ],
+          "delegationStrategy": "ALWAYS"
+        },
+        {
+          "name": "GetDotaTeamMatchResults",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "teamID",
+              "type": "dotaTeamId",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.775378812176.109477507952"
+              },
+              "validations": [
+                {
+                  "type": "hasEntityResolutionMatch",
+                  "prompt": "Slot.Validation.775378812176.109477507952.948024536549"
+                }
+              ]
+            }
+          ],
+          "delegationStrategy": "ALWAYS"
+        },
+        {
+          "name": "GetDotaTeamPredictions",
+          "confirmationRequired": true,
+          "prompts": {
+            "confirmation": "Confirm.Intent.906895007845"
+          },
+          "slots": [
+            {
+              "name": "teamOneID",
+              "type": "dotaTeamId",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.906895007845.921301598651"
+              },
+              "validations": [
+                {
+                  "type": "hasEntityResolutionMatch",
+                  "prompt": "Slot.Validation.906895007845.921301598651.1436521697807"
+                }
+              ]
+            },
+            {
+              "name": "teamTwoID",
+              "type": "dotaTeamId",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.906895007845.925186739516"
+              },
+              "validations": [
+                {
+                  "type": "hasEntityResolutionMatch",
+                  "prompt": "Slot.Validation.906895007845.925186739516.410854352697"
+                }
+              ]
+            }
+          ],
+          "delegationStrategy": "ALWAYS"
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.1103042522101.316972066631",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Which team's overview would you like to know about?"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.1103042522101.316972066631.693106362174",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Please provide a notable active team"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Slot.875936012202.416776874351",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "I heard {team}  overview, is that correct?"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.875936012202.416776874351.1109607378218",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Please specify a team name. Example Team Secret?"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Intent.342474307162",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Did you request for ongoing matches?"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Intent.1130367238944",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Did you request for ongoing tournaments?"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Intent.724073949204",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Did you request for upcoming tournaments?"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Intent.712713619030",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Did you request for completed tournaments?"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Intent.1328527408949",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Did you request for upcoming matches?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1009960668218.1007173481158",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Please specify a team name. Example you can say Team Secret "
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Slot.1009960668218.1007173481158",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "I heard {teamID} , is that correct?"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.1009960668218.1007173481158.312390758671",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Please specify a team name Example Team Secret?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1009960668218.1285646458171",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Please specify a team name. Example, you can say Team Secret"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Slot.1009960668218.1285646458171",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "I heard {teamID} match results, is that correct?"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.1009960668218.1285646458171.92753261781",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Please specify a team name Example Team Secret?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.39763503398.641457414226",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Would you like to know more about the match?"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.1458719464770.1011767418460.1036410630925",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Please specify a valid team name. Example Team Secret?"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.341070753446.455101424386.1214274740019",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Please specify a valid team name. Example Team Secret?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1458719464770.1011767418460",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Which team's achievements would you like to know about?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.341070753446.455101424386",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Which team's roster would you like to know about?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.25134667999.823688151209",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Which match status would you like to know. Example, you can say, give me match one status"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1184505318482.1091169615511",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "How many matches would you like to know?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.775378812176.109477507952",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Which team's match results would you like to know about?"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.775378812176.109477507952.948024536549",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Please specify a valid team name. Example Team Secret?"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.906895007845.921301598651.1436521697807",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Please specify a team name Example Team Secret?"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.906895007845.925186739516.410854352697",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Please specify a team name Example Team Secret?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.906895007845.921301598651",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Who would you like team one to be?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Please specify a team name for team one"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.906895007845.925186739516",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Who would you like {teamOneID} to play against with?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Please specify a team name for team two"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Intent.906895007845",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Would you like me to get predictions for {teamOneID} versus {teamTwoID} ?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.223299537065.469899415380",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Would you like to know the probability?"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.223299537065.469899415380.506103556341",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Please say yes or no"
+          }
+        ]
+      }
+    ]
+  },
+  "version": "49"
+}

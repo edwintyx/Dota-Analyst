@@ -1,0 +1,33 @@
+{
+  "deploy_settings": {
+    "default": {
+      "skill_id": "amzn1.ask.skill.e33e29ce-b513-4bfe-98cd-068d9107a87c",
+      "was_cloned": true,
+      "merge": {},
+      "resources": {
+        "manifest": {
+          "eTag": "769913f4c27342c492970720be39f0f3"
+        },
+        "interactionModel": {
+          "en-US": {
+            "eTag": "168658ec9c46b5b655a44a4d1965baba"
+          }
+        },
+        "lambda": [
+          {
+            "arn": "arn:aws:lambda:us-east-1:137816862477:function:dota-analyst-lambda-function",
+            "awsRegion": "us-east-1",
+            "functionName": "dota-analyst-lambda-function",
+            "alexaUsage": [
+              "custom/default"
+            ],
+            "revisionId": "90bec89b-0f63-4fb6-93fc-46e67e745bae",
+            "codeUri": "lambda/us-east-1_dota-analyst-lambda-function",
+            "handler": "lambda_function.lambda_handler",
+            "runtime": "python3.6"
+          }
+        ]
+      }
+    }
+  }
+}
