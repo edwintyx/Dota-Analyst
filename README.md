@@ -22,7 +22,7 @@ To ensure the robustness of the skill, I employed various testing techniques suc
 While the project met all the key requirements, enhancing the predictive power of the application is an area for future work. My aim is to develop a more intricate and autonomous design, integrating more real-time game data for improved prediction accuracy.
 
 ## Conclusion
-Dota Analyst contributes to the thrilling realm of digital technology by offering insights and predictions to Dota 2 enthusiasts globally. My predictive model demonstrates high accuracy, yet the unpredictable nature of Dota matches requires me to consider real-time game data in future enhancements.
+Dota Analyst contributes to the thrilling realm of digital technology by offering insights and predictions to Dota 2 enthusiasts globally. Although the prediction model demonstrates high accuracy, the unpredictable nature of Dota matches requires me to consider real-time game data in future enhancements.
 
 ## Note
-Dota Analyst is available for use via the Alexa Skills Store [(Link)](https://www.amazon.com/Edwin-Dota-Analyst/dp/B07WDJDWRJ). I'm proud to present this Alexa Skill as a valuable tool for the Dota community.
+This project was part of the fulfillment of my final dissertation. Dota Analyst is available for use via the Alexa Skills Store [(Link)](https://www.amazon.com/Edwin-Dota-Analyst/dp/B07WDJDWRJ).
