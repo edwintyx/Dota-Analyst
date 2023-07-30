@@ -2,7 +2,7 @@
 ![image](https://github.com/edwintyx/Dota-Analyst/assets/23330497/b4329773-e1a1-460e-ad0e-8eb69e6fb59b)
 
 ## Description
-Dota Analyst is an Alexa Skill I designed for Amazon Echo devices, offering a wealth of Dota 2 information and match predictions. Now available on the Amazon Store [(Link)](https://www.amazon.com/Edwin-Dota-Analyst/dp/B07WDJDWRJ), it serves Dota 2 fans by providing match schedules, results, team achievements, rosters, and predictions for ongoing tournaments like "The Internationals".
+Dota Analyst is an Alexa Skill I designed for Amazon Echo devices, offering a wealth of Dota 2 information and match predictions. Now available on the Amazon Store [(Link)](https://www.amazon.com/Edwin-Dota-Analyst/dp/B07WDJDWRJ), it serves Dota 2 fans by providing match schedules, results, team achievements, rosters, and predictions for ongoing tournaments like "The Internationals 2019".
 
 ## Key Features
 - **Predictive Analytics**: The application implements machine learning models like Logistic Regression, Support Vector Machine, and K-nearest Neighbors to predict match outcomes. The prediction model is evaluated using standard performance measures. 
