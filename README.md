@@ -2,7 +2,7 @@
 ![image](https://github.com/edwintyx/Dota-Analyst/assets/23330497/b4329773-e1a1-460e-ad0e-8eb69e6fb59b)
 
 ## Description
-The Dota Analyst is an Alexa Skill developed for Amazon Echo devices, designed to provide users with important Dota 2 information such as match schedules, results, team achievements, rosters, and predictions for ongoing tournaments like "The Internationals". This project, which took approximately three months to develop, is now live and available on the online Amazon Store.
+Dota Analyst is an Alexa Skill I designed for Amazon Echo devices, offering a wealth of Dota 2 information and match predictions. Now available on the Amazon Store [https://www.amazon.com/Edwin-Dota-Analyst/dp/B07WDJDWRJ](url), it serves Dota 2 fans by providing match schedules, results, team achievements, rosters, and predictions for ongoing tournaments like "The Internationals".
 
 ## Key Features
 - **Predictive Analytics**: The application implements machine learning models like Logistic Regression, Support Vector Machine, and K-nearest Neighbors to predict match outcomes. The prediction model is evaluated using standard performance measures. 
@@ -10,19 +10,19 @@ The Dota Analyst is an Alexa Skill developed for Amazon Echo devices, designed t
 - **Data Integration**: The Dota Analyst retrieves match data using the OpenDota API and selected feature sets are used to build the prediction models.
 
 ## System Design
-The Alexa skill relies on Amazon Web Services (AWS) Lambda for the back-end, while the front-end is built on the interaction model provided by Alexa Skills Kit. Additionally, a Python-based match predictor is integrated with the system to predict professional match outcomes.
+The back-end relies on Amazon Web Services (AWS) Lambda, while the front-end is crafted using Alexa Skills Kit's interaction model. A Python match predictor is integrated to anticipate professional match outcomes.
 
 ## Implementation
-The Dota Analyst skill comprises of multiple components including an interaction model for user communication, an AWS Lambda function to manage state machines for dialog management, and a Python match predictor.
+Dota Analyst consists of an interaction model for user engagement, an AWS Lambda function for dialog management, and a Python match predictor.
 
 ## Testing and Evaluation
-The skill went through rigorous testing including general testing, user slot testing, and Amazon Alexa app testing to ensure reliable performance. User feedback was also incorporated from an online survey questionnaire to make necessary improvements.
+To ensure the robustness of the skill, I employed various testing techniques such as general testing, user slot testing, and Amazon Alexa app testing. User feedback, collected via an online survey, was also incorporated for continuous improvement.
 
 ## Outcome and Future Improvements
-While the project successfully achieved all mandatory and desirable requirements, there is room for improvement, especially with respect to the predictive power of the application. Future work includes developing a more complex and autonomous design to enhance the performance of the predictive model.
+While the project met all the key requirements, enhancing the predictive power of the application is an area for future work. My aim is to develop a more intricate and autonomous design, integrating more real-time game data for improved prediction accuracy.
 
 ## Conclusion
-The Dota Analyst is a rewarding project contributing to the fascinating world of digital technology, providing insights and predictions to millions of Dota 2 enthusiasts worldwide. Though the prediction accuracy is quite high, Dota outcomes prove to be inherently unpredictable, indicating the exciting nature of the game.
+Dota Analyst contributes to the thrilling realm of digital technology by offering insights and predictions to Dota 2 enthusiasts globally. My predictive model demonstrates high accuracy, yet the unpredictable nature of Dota matches requires me to consider real-time game data in future enhancements.
 
 ## Note
-The project's final outcome is realized in the application's publication in the Apple Skills Store. We proudly present the Dota Analyst as an Alexa Skill for the community of Dota enthusiasts.
+Dota Analyst is available for use via the Alexa Skills Store [https://www.amazon.com/Edwin-Dota-Analyst/dp/B07WDJDWRJ](url). I'm proud to present this Alexa Skill as a valuable tool for the Dota community.
